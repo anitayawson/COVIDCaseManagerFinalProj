@@ -1,4 +1,15 @@
 /* HOMEPAGE CSS */
+.avatar__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.avatar_dropdown {
+  position: fixed;
+  top: 25px;
+  right: 30px
+}
 .homepage {
   background-color: #7d998e;
   display: flex;
@@ -61,14 +72,14 @@
 /* RESOURCE PAGE CSS GRID */
 .flex-container {
   display: grid;
-  height: 100%;
+  height: 100vh;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 .flexbox-item {
   /* width: 300px; */
-  height: 150px;
+  /* height: 150px; */
   background-color: gray;
   display: flex;
   justify-content: center;
@@ -76,6 +87,7 @@
 }
 .flexbox-item.horizontal {
   grid-column: span 2 ;
+  height: 100%;
 }
 .flexbox-item.long-vertical {
   grid-row: span 2;
@@ -83,7 +95,9 @@
 }
 .flexbox-item.vertical {
   text-align: center;
+  height: 100%;
 }
 .flexbox-item.long-horizontal {
   grid-column: span 3;
+  height: 100%;
 }

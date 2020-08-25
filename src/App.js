@@ -7,13 +7,14 @@ import ResourcesPageComponent from './components/ResourcePageComponent'
 
 import './App.css';
 
+
 function App() {
   return (
     <div>
-      <PatientProfileComponent />
+      {/* <PatientProfileComponent /> */}
       {/* <HomepageComponent /> */}
       {/* <TestPageComponent /> */}
-      {/* <ResourcesPageComponent /> */}
+      <ResourcesPageComponent />
     </div>
   );
 }
