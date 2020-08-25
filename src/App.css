@@ -1,4 +1,4 @@
-/* HOMEPAGE CSS */
+/* PROFILE DROPDOWN - top right corner of screens */
 .avatar__img {
   width: 50px;
   height: 50px;
@@ -10,8 +10,10 @@
   top: 25px;
   right: 30px
 }
+
+/* HOMEPAGE */
 .homepage {
-  background-color: #7d998e;
+  background-color: #9aa6a3;
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -22,52 +24,179 @@
 .homepage-left {
   flex: 6;
   text-align: center;
+  color: #fff;
 }
-.login-section {
-  flex: 4;
-  /* justify-items: center; */
-  margin-left: 195px;
-  margin-right: 150px
-}
-.login-titles {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.form-control {
-  margin-bottom: 30px;
-}
-
-.bottom-links {
-  display: flex;
-  flex-direction: row;
-  font-size: 13px;
-  justify-content: space-evenly;
-  margin-top: 5px;
-}
-/* .App-logo {
-  height: 40vmin;
+.App-logo {
+  height: 30vmin;
   pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
+}
+@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-} */
-
-/* .App-link {
-  color: #61dafb;
-} */
-
-/* @keyframes App-logo-spin {
+}
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-} */
+}
+.login-section {
+	flex: 4;
+	margin-left: 195px;
+	margin-right: 150px
+  }
+body{
+	margin:0;
+	color:#6a6f8c;
+	background:#c8c8c8;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.homepage-divider {
+	border-left: 1px solid rgb(190, 189, 189);
+  	height: 400px;
+  	position: absolute;
+	left: 50%;
+  	margin-left: -3px;
+  	top: 100;
+}
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:560px;
+	min-height:670px;
+	position:relative;
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;;
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab{
+	font-size:16px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color: #83CFC6;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:#fff;
+	font-size:12px;
+}
+.login-form .group .button{
+	background: #83CFC6;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+.form-check {
+	margin:0 10px 15px 0;
+	color: rgb(80, 75, 75);
+	font-size: 14px;
+}
+.hr{
+	height:2px;
+	margin:40px 0 30px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
 
 /* RESOURCE PAGE CSS GRID */
 .flex-container {
@@ -78,8 +207,6 @@
   grid-gap: 30px;
 }
 .flexbox-item {
-  /* width: 300px; */
-  /* height: 150px; */
   background-color: gray;
   display: flex;
   justify-content: center;
@@ -101,3 +228,5 @@
   grid-column: span 3;
   height: 100%;
 }
+
+/* Home Comp 2 */

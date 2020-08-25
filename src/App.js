@@ -1,6 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import HomepageComponent from './components/HomepageComponent'
+import HomeComponent2 from './components/HomeComponent2'
 import PatientProfileComponent from './components/PatientProfileComponent'
 import TestPageComponent from './components/TestPageComponent'
 import ResourcesPageComponent from './components/ResourcePageComponent'
@@ -12,9 +13,10 @@ function App() {
   return (
     <div>
       {/* <PatientProfileComponent /> */}
-      {/* <HomepageComponent /> */}
+      <HomepageComponent />
+      {/* <HomeComponent2 /> */}
       {/* <TestPageComponent /> */}
-      <ResourcesPageComponent />
+      {/* <ResourcesPageComponent /> */}
     </div>
   );
 }
