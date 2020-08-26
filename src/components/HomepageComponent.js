@@ -33,7 +33,7 @@ export default function HomepageComponent() {
                                         </label>
                                 </div>
                                     <div class="group">
-                                        <input type="submit" class="button" value="Sign In" />
+                                        <a href="/profile"><input type="submit" class="button" value="Sign In" /></a>
                                     </div>
                                     <div class="hr"></div>
                                     <div class="foot-lnk">

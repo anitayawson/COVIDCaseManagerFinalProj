@@ -1,25 +1,16 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Sidebar from './sidebar'
-import Avatar from '../images/avatar.jpg'
+import Navbar from './navbar'
 
 export default function ResourcePageComponent() {
     return (
         <div>
             <Sidebar />
-            <div class="c-dropdown avatar_dropdown">
-                <div class="c-avatar has-dropdown dropdown-toggle" id="dropdownMenuAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="avatar__img" src={Avatar} alt="Name" />
-                </div>
-                <div class="c-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuAvatar">
-                    <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
-                    <a class="c-dropdown__item dropdown-item" href="#">Account Settings</a>
-                    <a class="c-dropdown__item dropdown-item" href="#">Log out</a>
-                </div>
-            </div>
-            <div style={{ marginLeft: 200, marginRight: 200, marginBottom: 60 }}>
+            <Navbar />
+            <div style={{ marginLeft: 200, marginTop: 25, marginRight: 200, marginBottom: 60 }}>
                 <div>
-                    <h3 style={{ marginBottom: 50 }}>COVID-19 Resources and Support</h3>
+                    <h3 style={{ marginBottom: 40 }}>COVID-19 Resources and Support</h3>
                 </div>
                 <div className="flex-container">
                     <div className="flexbox-item horizontal" style={{ display: "flex", flexDirection: "column" }}>
