@@ -1,29 +1,13 @@
 import React from 'react';
-import Sidebar from './sidebar'
 import Navbar from '../navbar'
 import Footer from '../footer'
 
 export default function PatientProfileComponent() {
     return (
         <div>
-            <Sidebar />
             <Navbar />
-            {/* <div class="topnav">
-                    <h1 style={{ fontFamily: "Verdana", fontWeight: "bold", letterSpacing: "4px", fontSize: 14 }}>COVID-19 CASE</h1>
-                    <h1 style={{ fontFamily: "Verdana", fontWeight: "bold", letterSpacing: "4px", fontSize: 14 }}>MANAGER</h1>
-                    <h6 style={{ letterSpacing: "6px", fontSize: 10 }}>ONLINE DIAGNOSTIC SYSTEM</h6>
-                </div>
-                <div class="c-dropdown avatar_dropdown">
-                    <div class="c-avatar has-dropdown dropdown-toggle" id="dropdownMenuAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="avatar__img" src={Avatar} alt="Name" />
-                    </div>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuAvatar" style={{ background: "#373a47" }}>
-                        <a class="dropdown-item" href="#">Edit Profile</a>
-                        <a class="dropdown-item" href="#">Account Settings</a>
-                        <a class="dropdown-item" href="#">Log out</a>
-                    </div>
-                </div> */}
-            <div style={{ marginLeft: 350, marginRight: 350, marginTop: 25, marginBottom: 60 }}>
+       
+            <div style={{ marginLeft: 350, marginRight: 350, marginTop: 180, marginBottom: 60 }}>
                 <div>
                     <h3 style={{ marginBottom: 40 }}>My Profile</h3>
                     <div>

@@ -2,13 +2,14 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Sidebar from './sidebar'
 import Navbar from '../navbar'
+import Footer from '../footer'
 
 export default function ResourcePageComponent() {
     return (
         <div>
-            <Sidebar />
+            {/* <Sidebar /> */}
             <Navbar />
-            <div style={{ marginLeft: 200, marginTop: 25, marginRight: 200, marginBottom: 60 }}>
+            <div style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: 60 }}>
                 {/* <div>
                     <h3 style={{ marginBottom: 40 }}>COVID-19 Resources and Support</h3>
                 </div> */}
@@ -34,9 +35,9 @@ export default function ResourcePageComponent() {
                         <a href="+233558439868">+233 55 843 9868</a>
                         <a href="+233509497700">+233 50 949 7700</a>
                     </div>
-                    <div className="flexbox-item long-horizontal">5</div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

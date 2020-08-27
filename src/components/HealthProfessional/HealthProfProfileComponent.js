@@ -1,14 +1,13 @@
 import React from 'react';
-import Sidebar2 from './sidebar2';
-import Navbar from '../navbar';
+import Navbar2 from './navbar2';
 import Footer from '../footer';
 
 export default function HealthProfProfileComponent() {
     return (
         <div>
-            <Sidebar2 />
-            <Navbar />
-            <div style={{ marginLeft: 350, marginRight: 350, marginTop: 25, marginBottom: 60 }}>
+            <Navbar2 />
+
+            <div style={{ marginLeft: 350, marginRight: 350, marginTop: 180, marginBottom: 60 }}>
                 <div>
                     <h3 style={{ marginBottom: 40 }}>Health Personnel Profile</h3>
                     <div>

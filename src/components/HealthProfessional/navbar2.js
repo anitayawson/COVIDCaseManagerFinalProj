@@ -1,13 +1,11 @@
-import React from 'react'
-import Avatar from '../images/avatar.jpg'
+import React from "react";
+import Avatar from '../../images/avatar.jpg'
 import { stack as Menu } from "react-burger-menu";
-import '../navbar.css';
-import Logo from '../images/logo.png'
+import '../../navbar.css';
+import Logo from '../../images/logo.png'
 import { Link } from 'react-router-dom'
 
-
-
-export default function navbar() {
+export default function navbar2(){
     return (
         <div class="row">
         <div class="container-fluid">
@@ -15,11 +13,10 @@ export default function navbar() {
                     <Menu>
                         <Link to="/"><img src={Logo} alt="Logo" class="sidebar-logo" style={{ height: "auto", width: 50, marginBottom: 50 }} /></Link>
                         <Link to="/profile" className="menu-item" >Profile</Link>
-                        <Link to="/test" className="menu-item">Test</Link>
-                        <Link to="/resources" className="menu-item" >Resources & Support</Link>
-                        <Link to="/settings" class="menu-item">Settings</Link>
-                        <Link to="/gethelp" href="menu-item">Get Help</Link>
-                        <Link to="/" href="menu-item">Log out</Link>
+                        <Link to="/portal" className="menu-item">Portal</Link>
+                        <Link to="/settings" href="menu-item">Settings</Link>
+                        <Link to="/gethelp" class="menu-item">Get Help</Link>
+                        <Link to="/" class="menu-item">Log out</Link>
                     </Menu>
                 </div>
                 
@@ -46,3 +43,4 @@ export default function navbar() {
         </div>
     )
 }
+

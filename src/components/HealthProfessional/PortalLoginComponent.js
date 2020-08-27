@@ -1,13 +1,11 @@
 import React from 'react'
-import Sidebar2 from './sidebar2'
-import Navbar from '../navbar'
+import Navbar2 from './navbar2'
 import Footer from '../footer'
 
 export default function PortalLoginComponent() {
     return (
         <div>
-            <Sidebar2 />
-            <Navbar />
+            <Navbar2 />
             <div style={{ marginLeft: 350, marginRight: 350, marginTop: 65, marginBottom: 60, textAlign: "center"}}>
                 <p>Log in with your Staff ID to access patient information and manage consultation requests.</p>
                 <div style={{position: "fixed", left: "39%"}}>

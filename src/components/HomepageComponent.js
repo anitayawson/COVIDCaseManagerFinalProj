@@ -1,5 +1,8 @@
 import React from 'react'
 import Logo from '../images/logo.png'
+import { Link } from 'react-router-dom'
+
+
 
 export default function HomepageComponent() {
     return (
@@ -34,7 +37,7 @@ export default function HomepageComponent() {
                                         </label>
                                     </div>
                                     <div class="group">
-                                        <a href="/profile"><input type="submit" class="button" value="Sign In" /></a>
+                                        <Link to=""><input type="submit" class="button" value="Sign In" /></Link>
                                     </div>
                                     <div class="hr"></div>
                                     <div class="foot-lnk">
