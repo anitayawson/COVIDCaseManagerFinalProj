@@ -1,8 +1,7 @@
 import React from "react";
-
 import { stack as Menu } from "react-burger-menu";
-import '../sidebar.css';
-import Logo from '../images/logo.png'
+import '../../sidebar.css';
+import Logo from '../../images/logo.png'
 
 const sidebar = () => {
     return (

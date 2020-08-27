@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from './sidebar'
-import Navbar from './navbar'
+import Navbar from '../navbar'
 
 export default function TestPageComponent() {
     return (

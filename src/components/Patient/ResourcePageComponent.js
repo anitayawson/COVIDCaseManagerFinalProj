@@ -1,7 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Sidebar from './sidebar'
-import Navbar from './navbar'
+import Navbar from '../navbar'
 
 export default function ResourcePageComponent() {
     return (
@@ -9,9 +9,9 @@ export default function ResourcePageComponent() {
             <Sidebar />
             <Navbar />
             <div style={{ marginLeft: 200, marginTop: 25, marginRight: 200, marginBottom: 60 }}>
-                <div>
+                {/* <div>
                     <h3 style={{ marginBottom: 40 }}>COVID-19 Resources and Support</h3>
-                </div>
+                </div> */}
                 <div className="flex-container">
                     <div className="flexbox-item horizontal" style={{ display: "flex", flexDirection: "column" }}>
                         <h5>Ghana Health Service COVID-19 Tracker</h5>
