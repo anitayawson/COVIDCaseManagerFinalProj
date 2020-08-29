@@ -77,15 +77,10 @@ body {
   color: #b8b7ad;
 }
 
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
-
 .navbar-text {
   text-align: center;
   /* padding-left: 500px; */
-  left: 20%;
+  left: 17%;
 }
 
 .navbar-text h1 {
@@ -115,7 +110,7 @@ body {
   top:0;
   background-color: white;
   position: fixed;
-  /* z-index: 0; */
+  z-index: 1;
   height:auto;
   /* display: grid; */
   /* grid-template-columns: 20% 60% 20%; */

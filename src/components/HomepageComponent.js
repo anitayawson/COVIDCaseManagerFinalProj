@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../images/logo.png'
+import Footer from './footer'
 import { Link } from 'react-router-dom'
 
 
@@ -24,11 +25,15 @@ export default function HomepageComponent() {
                                 <div class="sign-in-htm">
                                     <div class="group">
                                         <label for="user" class="label">Username</label>
-                                        <input id="user" type="text" class="input" />
+                                        <input id="user" type="text" class="input input_anim" />
+                                        {/* <span class="focus-input_anim"></span> */}
+
                                     </div>
                                     <div class="group">
                                         <label for="pass" class="label">Password</label>
-                                        <input id="pass" type="password" class="input" data-type="password" />
+                                        <input id="pass" type="password" class="input input_anim" data-type="password" />
+                                        {/* <span class="focus-input_anim"></span> */}
+
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
@@ -48,15 +53,15 @@ export default function HomepageComponent() {
                                 <div class="sign-up-htm">
                                     <div class="group">
                                         <label for="user" class="label">Hospital ID</label>
-                                        <input id="user" type="text" class="input" />
+                                        <input id="user" type="text" class="input input_anim" />
                                     </div>
                                     <div class="group">
                                         <label for="pass" class="label">Email Address</label>
-                                        <input id="pass" type="text" class="input" />
+                                        <input id="pass" type="text" class="input input_anim" />
                                     </div>
                                     <div class="group">
                                         <label for="pass" class="label">Password</label>
-                                        <input id="pass" type="password" class="input" data-type="password" />
+                                        <input id="pass" type="password" class="input input_anim" data-type="password" />
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
@@ -78,7 +83,7 @@ export default function HomepageComponent() {
                     </div>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
 
     )

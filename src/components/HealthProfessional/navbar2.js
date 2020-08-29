@@ -13,7 +13,7 @@ export default function navbar2(){
                     <Menu>
                         <Link to="/"><img src={Logo} alt="Logo" class="sidebar-logo" style={{ height: "auto", width: 50, marginBottom: 50 }} /></Link>
                         <Link to="/profile" className="menu-item" >Profile</Link>
-                        <Link to="/portal" className="menu-item">Portal</Link>
+                        <Link to="/portallogin" className="menu-item">Portal</Link>
                         <Link to="/settings" href="menu-item">Settings</Link>
                         <Link to="/gethelp" class="menu-item">Get Help</Link>
                         <Link to="/" class="menu-item">Log out</Link>
@@ -32,9 +32,9 @@ export default function navbar2(){
                             <img class="avatar__img" src={Avatar} alt="Name" />
                         </div>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuAvatar">
-                            <a class="dropdown-item" href="#">Edit Profile</a>
+                            <Link to="/professionalprofile" class="dropdown-item">Edit Profile</Link>
                             <a class="dropdown-item" href="#">Account Settings</a>
-                            <a class="dropdown-item" href="#">Log out</a>
+                            <Link to="/" class="dropdown-item">Log out</Link>
                         </div>
                     </div>
                 </div>

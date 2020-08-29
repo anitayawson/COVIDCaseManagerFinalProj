@@ -35,9 +35,9 @@ export default function navbar() {
                             <img class="avatar__img" src={Avatar} alt="Name" />
                         </div>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuAvatar">
-                            <a class="dropdown-item" href="#">Edit Profile</a>
+                            <Link to="/profile" class="dropdown-item">Edit Profile</Link>
                             <a class="dropdown-item" href="#">Account Settings</a>
-                            <a class="dropdown-item" href="#">Log out</a>
+                            <Link to="/" class="dropdown-item">Log out</Link>
                         </div>
                     </div>
                 </div>
