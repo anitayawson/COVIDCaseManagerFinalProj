@@ -15,7 +15,7 @@ export class ResultPage extends Component {
     return (
       <div className="container" style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: "20%" }}>
         <Navbar />
-        <div className="row">
+        <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
           <div className="col">
             <div class="progress">
               <div
@@ -30,7 +30,7 @@ export class ResultPage extends Component {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
           <div className="col">
             <h4>Your Test Result</h4>
 

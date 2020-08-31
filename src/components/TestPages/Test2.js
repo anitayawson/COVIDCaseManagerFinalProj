@@ -13,17 +13,16 @@ import Footer from '../footer'
       };
   render() {
     return (
-    
+    <div>
+      <Navbar />
         <div className="container" style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: "20%" }}>
-          <Navbar />
-         <div className="row">
+         <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
             <div className="col">
-              <h3>COVID-19 ONLINE TEST</h3>
-              <div className="progress">
+              <div className="progress" style={{width: "70%"}}>
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style={{ width: "25%" }}
+                  style={{ width: "25%", backgroundColor: "#388087" }}
                   aria-valuenow="16"
                   aria-valuemin="0"
                   aria-valuemax="100"
@@ -31,8 +30,7 @@ import Footer from '../footer'
               </div>
             </div>
           </div>
-
-          <div className="row">
+          <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
             <div className="col">
               <p>
                 In the past 14 days, have individuals had any contact with a
@@ -75,7 +73,7 @@ import Footer from '../footer'
           </div>
           <Footer />
         </div>
-      
+        </div>
     );
   }
 }
