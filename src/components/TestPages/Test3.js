@@ -15,18 +15,17 @@ class Test3 extends Component {
   render() {
    
     return (
-      
-        <div className="container" style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: "20%" }}>
+      <div>
           <Navbar />
-          <div className="row">
+        <div className="container" style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: "20%" }}>
+          <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
             <div className="col">
-            <h3>COVID-19 ONLINE TEST</h3>
-              <div class="progress">
+              <div class="progress" style={{width: "70%"}}>
                
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style={{width: "50%"}}
+                  style={{width: "50%", backgroundColor: "#388087"}}
                   aria-valuenow="19"
                   aria-valuemin="0"
                   aria-valuemax="100"
@@ -35,7 +34,7 @@ class Test3 extends Component {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
             <div className="col">
               <p>
                 Have any individuals recently travelled to areas with known
@@ -82,6 +81,7 @@ class Test3 extends Component {
 
           </div>
           <Footer />
+        </div>
         </div>
       
     

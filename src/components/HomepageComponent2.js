@@ -17,15 +17,21 @@ export default function HomepageComponent() {
                 </div>
                 <div className="homepage-divider"></div>
                 <div className="login-section">
-                    <div className="login-wrap">
-                        <div className="login-html">
+                    <div class="login-wrap">
+                        <div class="login-html">
                             <input id="tab-1" type="radio" name="tab" class="sign-in" checked /><label for="tab-1" class="tab">Patient</label>
                             <input id="tab-2" type="radio" name="tab" class="sign-up" /><label for="tab-2" class="tab">Health Professional</label>
-                            <div className="login-form">
-                                <div className="sign-in-htm">
+                            <div class="login-form">
+                                <div class="sign-in-htm">
                                     <div class="group">
                                         <label for="user" class="label">Username</label>
                                         <input id="user" type="text" class="input input_anim" />
+                                        {/* <span class="focus-input_anim"></span> */}
+
+                                    </div>
+                                    <div class="group">
+                                        <label for="pass" class="label">Email address</label>
+                                        <input id="pass" type="text" class="input input_anim" data-type="password" />
                                         {/* <span class="focus-input_anim"></span> */}
 
                                     </div>
@@ -35,19 +41,18 @@ export default function HomepageComponent() {
                                         {/* <span class="focus-input_anim"></span> */}
 
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            Keep me signed in
-                                        </label>
+                                    <div class="group">
+                                        <label for="pass" class="label">Confirm Password</label>
+                                        <input id="pass" type="password" class="input input_anim" data-type="password" />
+                                        {/* <span class="focus-input_anim"></span> */}
+
                                     </div>
                                     <div class="group">
-                                        <Link to=""><input type="submit" class="button" value="Sign In" /></Link>
+                                        <Link to=""><input type="submit" class="button" value="Sign Up" /></Link>
                                     </div>
                                     <div class="hr"></div>
                                     <div class="foot-lnk">
-                                        <a href="#forgot">Forgot Password?</a>
-                                        <p> Don't have an account? <Link to="/signup">Sign up</Link> </p>
+                                        <p> Already have an account? <Link to="/">Sign in</Link> </p>
                                     </div>
                                 </div>
                                 <div class="sign-up-htm">
@@ -63,18 +68,16 @@ export default function HomepageComponent() {
                                         <label for="pass" class="label">Password</label>
                                         <input id="pass" type="password" class="input input_anim" data-type="password" />
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            Keep me signed in
-                                        </label>
+                                    <div class="group">
+                                        <label for="pass" class="label">Confirm Password</label>
+                                        <input id="pass" type="password" class="input input_anim" data-type="password" />
                                     </div>
                                     <div class="group">
-                                        <a href="/professionalprofile"><input type="submit" class="button" value="Sign In" /></a>
+                                        <a href="/professionalprofile"><input type="submit" class="button" value="Sign Up" /></a>
                                     </div>
                                     <div class="hr"></div>
                                     <div class="foot-lnk">
-                                        <a href="#forgot">Forgot Password?</a> Don't have account?<Link to="/signup"> Sign up</Link>
+                                        Already have an account?<Link to="/"> Sign in</Link>
                                         {/* <p> Don't have an account?  </p> */}
                                     </div>
                                 </div>
