@@ -72,9 +72,9 @@ export default function HealthProfProfileComponent() {
                                 <input type="text" class="form-control" />
                             </div>
                         </div>
-                        {/* <div style={{ textAlign: "center", marginTop: 20 }}>
+                        <div style={{ textAlign: "center", marginTop: 20 }}>
                             <a href="/portallogin"><button type="button" class="btn btn-info">Save</button></a>
-                        </div> */}
+                        </div>
                     </div>
                 </form>
             </div>
