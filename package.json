@@ -18,13 +18,7 @@
     "react-redux-firebase": "2.2.*",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-<<<<<<< HEAD
-    "redux": "^4.0.5",
-    "redux-firestore": "^0.10.0",
-    "redux-thunk": "^2.3.0",
-=======
     "react-signature-canvas": "^1.0.3",
->>>>>>> d5c3b20792528547afbfbf329d92961c6b62433e
     "typewriter-effect": "^2.13.1"
   },
   "scripts": {
