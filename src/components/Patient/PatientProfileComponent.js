@@ -75,7 +75,7 @@ export default function PatientProfileComponent() {
                                             </div>
                                         </div>
 
-                                    <div style={{ textAlign: "center", marginTop: 20 }}>
+                                    <div style={{ textAlign: "center", marginTop: 20, position: "relative", left: "30%" }}>
                                     <a href="/test"><button type="button" class="btn btn-info">Save</button></a>
                                     </div>
                             </div>
