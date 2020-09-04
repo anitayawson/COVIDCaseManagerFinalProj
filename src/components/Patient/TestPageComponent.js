@@ -28,6 +28,7 @@ export default class TestPageComponent extends Component {
         const { step } = this.state
         this.setState({ step: step - 1 })
     }
+ 
 
     render() {
         switch (this.state.step) {

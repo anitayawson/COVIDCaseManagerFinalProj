@@ -42,7 +42,7 @@ export default function HomepageComponent() {
                                         </label>
                                     </div>
                                     <div class="group">
-                                        <Link to=""><input type="submit" class="button" value="Sign In" /></Link>
+                                        <Link to="/test"><input type="submit" class="button" value="Sign In" /></Link>
                                     </div>
                                     <div class="hr"></div>
                                     <div class="foot-lnk">
@@ -70,7 +70,7 @@ export default function HomepageComponent() {
                                         </label>
                                     </div>
                                     <div class="group">
-                                        <a href="/professionalprofile"><input type="submit" class="button" value="Sign In" /></a>
+                                        <Link to="/portallogin"><input type="submit" class="button" value="Sign In" /></Link>
                                     </div>
                                     <div class="hr"></div>
                                     <div class="foot-lnk">

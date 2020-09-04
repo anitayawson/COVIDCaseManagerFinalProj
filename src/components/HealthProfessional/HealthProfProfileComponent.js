@@ -75,6 +75,20 @@ export default function HealthProfProfileComponent() {
                         {/* <div style={{ textAlign: "center", marginTop: 20 }}>
                             <a href="/portallogin"><button type="button" class="btn btn-info">Save</button></a>
                         </div> */}
+                         <button
+              type="submit"
+              className="rounded-pill"
+              style={{
+                margin: 10,
+                marginLeft: 300,
+                background:"lightgreen",
+                color:"black" ,
+                marginTop:25
+                
+              }}
+            >
+              Save Changes
+            </button>
                     </div>
                 </form>
             </div>

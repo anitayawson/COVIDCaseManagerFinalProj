@@ -76,19 +76,21 @@ class Test1 extends Component {
                   How many individuals are experiences one or more of the
                   selected symptoms.?
                 </p>
+                <Link to="/test">
                 <button type="submit" className="btn btn-primary">
                   Cancel
                 </button>
+                </Link>
                 <button
                   type="submit"
-                  className="rounded-pill"
+                  className="btn btn-primary ml-3"
                   onClick={this.prev}
                 >
                   prev
                 </button>
                 <button
                   type="submit"
-                  className="rounded-pill"
+                  className="btn btn-primary ml-3"
                   onClick={this.next}
                 >
                   Next

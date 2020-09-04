@@ -63,20 +63,21 @@ class Test3 extends Component {
               <button type="submit" className="btn btn-primary ">
                   Cancel
                 </button>
+               
                 <button
                   type="submit"
-                  className="rounded-pill"
+                  className="btn btn-primary ml-3"
                   onClick={this.prev}
                 >
                   prev
                 </button>
                 <button
                   type="submit"
-                  className="rounded-pill"
+                  className="btn btn-primary ml-3"
                   onClick={this.next}
                 >
                   Next
-                </button>
+                </button> 
                 </div>
               </div>
 
