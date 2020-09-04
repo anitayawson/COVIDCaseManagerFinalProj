@@ -8,15 +8,16 @@ import { Link } from 'react-router-dom'
 export default function HomepageComponent() {
     return (
         <div>
-            <div className="homepage">
-                <div className="homepage-left">
+            <div className="homepage row ">
+                
+                <div className="homepage-left col-lg-6">
                     <img src={Logo} className="App-logo" alt="logo" />
                     <h1 style={{ fontFamily: "Verdana", fontWeight: "bold", letterSpacing: "4px" }}>COVID-19 CASE</h1>
                     <h1 style={{ fontFamily: "Verdana", fontWeight: "bold", letterSpacing: "4px" }}>MANAGER</h1>
                     <h6 style={{ letterSpacing: "6px" }}>ONLINE DIAGNOSTIC SYSTEM</h6>
                 </div>
                 <div className="homepage-divider"></div>
-                <div className="login-section">
+                <div className="login-section col-lg-6">
                     <div class="login-wrap">
                         <div class="login-html">
                             <input id="tab-1" type="radio" name="tab" class="sign-in" checked /><label for="tab-1" class="tab">Patient</label>

@@ -22,34 +22,35 @@ class Test6 extends Component {
     this.props.cancel();
   }
 
-  componentDidMount(){
+  componentDidMount = () =>{
 
-    $(document).ready(function (){
+
       // alert("document ready")
       
-      $("#thc").click(function (){
-        
-        let favorite = [];
+      $("#thc").on('click', function(){
+        alert("fingers crossed")
+    
+        // let favorite = [];
 
-        $.each($("input[name='symptoms]:checked"),
-        function() {
-          favorite.push($(this).val());
-        });
+        // $.each($("input[name='symptoms]:checked"),
+        // function() {
+          
+        //   favorite.push($(this).val());
+        // });
 
 
-        $.each(favorite, function (i, val){
-          // alert("faourite");
-            if (val === "headache" || val === "skinrash"){
-              // alert("yes plis")
+        // $.each(favorite, function (i, val){
+        //   alert("faourite");
+        //     if (val === "headache" || val === "skinrash"){
+        //       // alert("yes plis")
               
-              $("#the_arrow").animate({
-                left: '60%'
-              });
-            }
-        })
-        // window.location.href = '/results?left=60%';
+        //     }
+        // })
+        // $("#the_arrow").animate({
+        //   left: '60%'
+        // });
       })
-    })
+    
 
   }
   render() {

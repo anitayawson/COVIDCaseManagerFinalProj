@@ -17,6 +17,36 @@ export class ResultPage extends Component {
     this.props.prev();
   };
 
+ 
+
+//   componentDidMount = () =>{
+//     // alert("document ready")
+    
+//     $("#thc").on('click', function(){
+//       alert("this is a test")
+  
+//       let favorite = [];
+
+//       $.each($("input[name='symptoms']:checked"),
+//       function() {
+        
+//         favorite.push($(this).val());
+//       });
+
+//       $.each(favorite, function (i, val){
+//         alert("faourite");
+//           if (val === "headache" || val === "skinrash"){
+//             alert("yes plis")
+//             // $("#the_arrow").animate({
+//             //   left: '60%'
+//             // });
+            
+//           }
+//       })
+      
+//     })
+  
+// }
   // componentDidMount(){
   //   $.urlParam = function (name) {
   //     var results = new RegExp('[\?&]' + name + '=([^&#]*)')
@@ -55,10 +85,10 @@ export class ResultPage extends Component {
               {/* progress bar!!! */}
 
               <div class="the_arrow" style={{ width: "660px", height: "200px" }}>
-              <img id="the_arrow" src={Down} style={{height: "35px", position: "relative", top:"80px"}} />
+              <img id="the_arrow" src={Down} style={{height: "35px", position: "relative", top:"30px"}} />
                 
               
-                <div class="progress" style={{ width: 650, marginBottom: 50, marginTop: 80, height: 10 }}>
+                <div class="progress" style={{ width: 650, marginTop: 30, height: 10 }}>
                   <div class="progress-bar" role="progressbar" style={{width: "33%", backgroundColor: "green"}} aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
                   <div class="progress-bar" role="progressbar" style={{width: "33%", backgroundColor: "orange"}} aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
                   <div class="progress-bar" role="progressbar" style={{width: "34%", backgroundColor: "red"}} aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
@@ -134,6 +164,7 @@ export class ResultPage extends Component {
             <div className="row" style={{ marginTop: 40 }}>
               <div className="col">
                 <div className=" mt-3" style={{ position: "relative", left: "29%", marginTop: 10 }}>
+                <button id="thc" type="submit" className="btn btn-primary btn-lg" onClick={this.componentDidMount} style={{backgroundColor: "#388087"}}>Get Results</button>
                   <Link to="/resources"><button type="submit" style={{ backgroundColor: "#388087" }} className="btn btn-primary btn-lg">Go to Resources</button></Link>
                 </div>
               </div>

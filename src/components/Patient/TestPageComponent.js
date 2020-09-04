@@ -11,6 +11,8 @@ import TestPage4 from '../TestPages/Test4'
 import TestPage5 from '../TestPages/Test5'
 import TestPage6 from '../TestPages/Test6'
 import TestResult from '../TestPages/ResultPage'
+import $ from "jquery"
+
 
 export default class TestPageComponent extends Component {
     constructor(props) {
@@ -32,7 +34,36 @@ export default class TestPageComponent extends Component {
         const { step } = this.state
         this.setState({step: 0})
     }
+    componentDidMount = () =>{
 
+
+        // alert("document ready")
+        
+        $("#thc").on('click', function(){
+          alert("this is a test")
+      
+        //   let favorite = [];
+    
+        //   $.each($("input[name='symptoms']:checked"),
+        //   function() {
+            
+        //     favorite.push($(this).val());
+        //   });
+    
+        //   $.each(favorite, function (i, val){
+        //     alert("faourite");
+        //       if (val === "headache" || val === "skinrash"){
+        //         alert("yes plis")
+        //         // $("#the_arrow").animate({
+        //         //   left: '60%'
+        //         // });
+                
+        //       }
+        //   })
+          
+        })
+      
+    }
  
 
     render() {
@@ -83,7 +114,10 @@ export default class TestPageComponent extends Component {
                 );
             case 7:
                 return (
-                    <TestResult next={this.next} back={this.back} cancel = {this.cancel} />
+                    <TestResult next={this.next} back={this.back} cancel = {this.cancel} 
+                    
+                    
+                    />
                 );
         }
     }
