@@ -7,10 +7,7 @@ import Footer from '../footer'
 export default function PatientProfileComponent() {
     return (
         <div style={{backgroundColor: "#F6F6F2"}}>
-            <Navbar />
-       
-            {/* <div style={{ marginLeft: 350, marginRight: 350, marginTop: 180, marginBottom: 60 }}> */}
-            
+            <Navbar />            
                 <div class="container" style={{ marginTop: 180, marginBottom: 60}}>
                     <h3 style={{ marginBottom: 30, marginLeft: 200 }}>My Profile</h3>
                         <form>
@@ -78,9 +75,9 @@ export default function PatientProfileComponent() {
                                             </div>
                                         </div>
 
-                                    {/* <div style={{ textAlign: "center", marginTop: 20 }}>
+                                    <div style={{ textAlign: "center", marginTop: 20 }}>
                                     <a href="/test"><button type="button" class="btn btn-info">Save</button></a>
-                                    </div> */}
+                                    </div>
                             </div>
                         </form>
                 </div>

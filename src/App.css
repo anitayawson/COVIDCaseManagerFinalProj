@@ -1,6 +1,7 @@
 /* HOMEPAGE */
 .homepage {
   background-color: #9aa6a3;
+  background-size: 900px 800px;
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -206,15 +207,15 @@ a{color:inherit;text-decoration:none}
   height: 100vh;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-}
+  grid-gap: 30px;}
 .flexbox-item {
-  background-color:#c9d3d1;
+  /* background-color:#c9d3d1; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .flexbox-item.horizontal {
+	background-color: #A65656;
   grid-column: span 2 ;
   height: 100%;
 }
@@ -222,13 +223,24 @@ a{color:inherit;text-decoration:none}
   grid-row: span 2;
   height: 100%;
 }
-.flexbox-item.vertical {
+.flexbox-item.vertical1 {
+	background-color:#c9d3d1;
+  text-align: center;
+  height: 100%;
+}
+.flexbox-item.vertical2 {
+	background-color:skyblue;
   text-align: center;
   height: 100%;
 }
 .flexbox-item.long-horizontal {
+	background-color: brown;
   grid-column: span 3;
   height: 100%;
+}
+.typewriter-effect {
+	height: 100px;
+	color: "yellow"
 }
 
 /* CONSULTATION REQUEST lIST PAGE */

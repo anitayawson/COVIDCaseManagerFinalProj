@@ -8,6 +8,7 @@ import HomepageComponent2 from './components/HomepageComponent2'
 // Patient Pages
 import PatientProfileComponent from './components/Patient/PatientProfileComponent'
 import TestPageComponent from './components/Patient/TestPageComponent'
+import ResultPage from './components/TestPages/ResultPage'
 import ResourcesPageComponent from './components/Patient/ResourcePageComponent'
 
 // HEALTH PROFESSIONAL PAGES
@@ -28,6 +29,7 @@ export default class App extends Component {
             <Route path="/profile" component={PatientProfileComponent} exact />
             <Route path="/professionalprofile" component={HealthProfProfile} exact />
             <Route path="/test" component={TestPageComponent} exact />
+            <Route path="/results" component={ResultPage} exact />
             <Route path="/resources" component={ResourcesPageComponent} exact />
             <Route path="/portallogin" component={PortalLogin} exact />
             <Route path="/consultationrequests" component={ConsultRequestList} exact />
