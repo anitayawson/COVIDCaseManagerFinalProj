@@ -72,10 +72,10 @@ export default class TestPageComponent extends Component {
 
                 return (
 
-                    <div>
+                    <div style={{ backgroundColor: "#F6F6F2" }}>
                         <Navbar />
                         <div style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: "20%" }}>
-                            <h3 style={{ marginBottom: 30, marginLeft: 150 }}>COVID-19 Online Test</h3>
+                            <h3 style={{ marginBottom: 30, marginLeft: 350 }}>COVID-19 Online Test</h3>
                             <p style={{ paddingLeft: 150, paddingRight: 100 }}>The test will take 10 minutes and provide instant results. Please answer ALL questions.</p>
                             <p style={{ paddingLeft: 150, paddingRight: 100 }}> Disclaimer: This is not an official COVID-19 test. For an official test, please contact a nearby hospital or testing center. </p>
                             <div style={{ marginTop: 60 }}>

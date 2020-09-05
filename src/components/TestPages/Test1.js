@@ -67,7 +67,7 @@ class Test1 extends Component {
                   </tbody>
                 </table>
               </div>
-              <div class="row " style={{}}>
+              <div class="row">
                 <div class="col-md-6 covid_que">
                   <h6 class="">
                     How many individuals are experiencing one or more of the
