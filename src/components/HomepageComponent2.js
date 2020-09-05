@@ -24,7 +24,7 @@ class HomepageComponent extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
-    
+
   };
 
   render() {
@@ -72,146 +72,148 @@ class HomepageComponent extends Component {
                   Health Professional
                 </label>
                 <div className="login-form">
-                  <div className="sign-in-htm">
-                    <div className="group">
-                      <label htmlFor="username" className="label">
-                        Username
+                  <form onSubmit={this.handleSubmit}>
+                    <div className="sign-in-htm">
+                      <div className="group">
+                        <label htmlFor="username" className="label">
+                          Username
                       </label>
-                      <input id="username" type="text" className="input input_anim"
-                       value={this.state.username}
-                       name="username"
-                       onChange={this.handleChange}
-                      
-                      />
-                      {/* <span class="focus-input_anim"></span> */}
-                    </div>
-                    <div className="group">
-                      <label htmlFor="emailaddress" className="label">
-                        Email address
+                        <input id="username" type="text" className="input input_anim"
+                          value={this.state.username}
+                          name="username"
+                          onChange={this.handleChange}
+
+                        />
+                        {/* <span class="focus-input_anim"></span> */}
+                      </div>
+                      <div className="group">
+                        <label htmlFor="emailaddress" className="label">
+                          Email address
                       </label>
-                      <input
-                        id="emailaddress"
-                        type="email"
-                        className="input input_anim"
-                        data-type="email"
-                        value={this.state.emailaddress}
-                        name="emailaddress"
-                        onChange={this.handleChange}
-                      />
-                      {/* <span class="focus-input_anim"></span> */}
-                    </div>
-                    <div className="group">
-                      <label htmlFor="pass" className="label">
-                        Password
+                        <input
+                          id="emailaddress"
+                          type="email"
+                          className="input input_anim"
+                          data-type="email"
+                          value={this.state.emailaddress}
+                          name="emailaddress"
+                          onChange={this.handleChange}
+                        />
+                        {/* <span class="focus-input_anim"></span> */}
+                      </div>
+                      <div className="group">
+                        <label htmlFor="pass" className="label">
+                          Password
                       </label>
-                      <input
-                        id="pass"
-                        type="password"
-                        className="input input_anim"
-                        data-type="password"
-                        value={this.state.password}
-                        name="password"
-                        onChange={this.handleChange}
-                      />
-                      {/* <span class="focus-input_anim"></span> */}
-                    </div>
-                    <div className="group">
-                      <label htmlFor="pass" className="label">
-                        Confirm Password
+                        <input
+                          id="pass"
+                          type="password"
+                          className="input input_anim"
+                          data-type="password"
+                          value={this.state.password}
+                          name="password"
+                          onChange={this.handleChange}
+                        />
+                        {/* <span class="focus-input_anim"></span> */}
+                      </div>
+                      <div className="group">
+                        <label htmlFor="pass" className="label">
+                          Confirm Password
                       </label>
-                      <input
-                        id="pass"
-                        type="password"
-                        className="input input_anim"
-                        data-type="password"
-                        value={this.state.confirmpassword}
-                        name="conformpassword"
-                        onChange={this.handleChange}
-                      />
-                      {/* <span class="focus-input_anim"></span> */}
-                    </div>
-                    <div className="group">
-                      <Link to="">
-                        <input type="submit" className="button" value="Sign Up" />
-                      </Link>
-                    </div>
-                    <div className="hr"></div>
-                    <div className="foot-lnk">
-                      <p>
-                        {" "}
+                        <input
+                          id="pass"
+                          type="password"
+                          className="input input_anim"
+                          data-type="password"
+                          value={this.state.confirmpassword}
+                          name="conformpassword"
+                          onChange={this.handleChange}
+                        />
+                        {/* <span class="focus-input_anim"></span> */}
+                      </div>
+                      <div className="group">
+                        <Link to="">
+                          <input type="submit" className="button" value="Sign Up" />
+                        </Link>
+                      </div>
+                      <div className="hr"></div>
+                      <div className="foot-lnk">
+                        <p>
+                          {" "}
                         Already have an account? <Link to="/">
-                          Sign in
+                            Sign in
                         </Link>{" "}
-                      </p>
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="sign-up-htm">
-                    <div className="group">
-                      <label htmlFor="user" class="label">
-                        Hospital ID
+                    </form>
+                    <div className="sign-up-htm">
+                      <div className="group">
+                        <label htmlFor="user" class="label">
+                          Hospital ID
                       </label>
-                      <input id="user" type="text" className="input input_anim"
-                         value={this.state.hospitalId}
-                         name="hospitalId"
-                         onChange={this.handleChange}
-                      />
-                    </div>
-                    <div className="group">
-                      <label htmlFor="pass" className="label">
-                        Email Address
+                        <input id="user" type="text" className="input input_anim"
+                          value={this.state.hospitalId}
+                          name="hospitalId"
+                          onChange={this.handleChange}
+                        />
+                      </div>
+                      <div className="group">
+                        <label htmlFor="pass" className="label">
+                          Email Address
                       </label>
-                      <input id="pass" type="text" className="input input_anim"
-                        value={this.state.emailaddress}
-                        name="emailaddress"
-                        onChange={this.handleChange}
-                      />
-                    </div>
-                    <div className="group">
-                      <label htmlFor="pass" class="label">
-                        Password
+                        <input id="pass" type="text" className="input input_anim"
+                          value={this.state.emailaddress}
+                          name="emailaddress"
+                          onChange={this.handleChange}
+                        />
+                      </div>
+                      <div className="group">
+                        <label htmlFor="pass" class="label">
+                          Password
                       </label>
-                      <input
-                        id="pass"
-                        type="password"
-                        className="input input_anim"
-                        data-type="password"
-                        value={this.state.password}
-                        name="password"
-                        onChange={this.handleChange}
-                      />
-                    </div>
-                    <div className="group">
-                      <label htmlFor="pass" className="label">
-                        Confirm Password
+                        <input
+                          id="pass"
+                          type="password"
+                          className="input input_anim"
+                          data-type="password"
+                          value={this.state.password}
+                          name="password"
+                          onChange={this.handleChange}
+                        />
+                      </div>
+                      <div className="group">
+                        <label htmlFor="pass" className="label">
+                          Confirm Password
                       </label>
-                      <input
-                        id="pass"
-                        type="password"
-                        className="input input_anim"
-                        data-type="password"
-                        value={this.state.confirmpassword}
-                        name="confirmpassword"
-                        onChange={this.handleChange}
-                      />
+                        <input
+                          id="pass"
+                          type="password"
+                          className="input input_anim"
+                          data-type="password"
+                          value={this.state.confirmpassword}
+                          name="confirmpassword"
+                          onChange={this.handleChange}
+                        />
+                      </div>
+                      <div className="group">
+                        <a href="/professionalprofile">
+                          <input type="submit" class="button" value="Sign Up" />
+                        </a>
+                      </div>
+                      <div className="hr"></div>
+                      <div className="foot-lnk">
+                        Already have an account?<Link to="/"> Sign in</Link>
+                        {/* <p> Don't have an account?  </p> */}
+                      </div>
                     </div>
-                    <div className="group">
-                      <a href="/professionalprofile">
-                        <input type="submit" class="button" value="Sign Up" />
-                      </a>
-                    </div>
-                    <div className="hr"></div>
-                    <div className="foot-lnk">
-                      Already have an account?<Link to="/"> Sign in</Link>
-                      {/* <p> Don't have an account?  </p> */}
-                    </div>
-                  </div>
+                </div>
                 </div>
               </div>
             </div>
           </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
     );
   }
 }

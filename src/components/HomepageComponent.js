@@ -71,6 +71,7 @@ class HomepageComponent extends Component {
                   Health Professional
                 </label>
                 <div className="login-form">
+                  <form onSubmit={this.handleSubmit}>
                   <div className="sign-in-htm">
                     <div className="group">
                       <label for="user" className="label">
@@ -126,6 +127,7 @@ class HomepageComponent extends Component {
                       </p>
                     </div>
                   </div>
+                  </form>
                   <div class="sign-up-htm">
                     <div className="group">
                       <label for="user" className="label">
@@ -182,6 +184,7 @@ class HomepageComponent extends Component {
                     </div>
                   </div>
                 </div>
+                
               </div>
             </div>
           </div>

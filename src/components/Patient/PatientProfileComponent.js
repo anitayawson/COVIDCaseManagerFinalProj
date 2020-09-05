@@ -44,7 +44,7 @@ class PatientProfileComponent extends Component {
 
       <div class="container" style={{ marginTop: 180, marginBottom: 60 }}>
         <h3 style={{ marginBottom: 30, marginLeft: 200 }}>My Profile</h3>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <div class="row" style={{ paddingRight: 200, paddingLeft: 200 }}>
             <div class="col-lg-12 col-md-12 col-sm-12">
               <div class="form-group">
@@ -70,7 +70,7 @@ class PatientProfileComponent extends Component {
                   type="text"
                   class="form-control"
                   placeholder="First name"
-                  value={this.state.lastname}
+                  value={this.state.firsttname}
                   name="firstname"
                   onChange={this.handleChange}
                 />
