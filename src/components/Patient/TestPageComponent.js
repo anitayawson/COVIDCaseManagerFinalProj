@@ -71,20 +71,31 @@ export default class TestPageComponent extends Component {
             case 0:
 
                 return (
-                    <div>
+                
+                    <div style={{marginTop: 0}}>
                         <Navbar />
-                        <div style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: "20%" }}>
-                            <h3 style={{ marginBottom: 30, marginLeft: 150 }}>COVID-19 Online Test</h3>
-                            <p style={{ paddingLeft: 150, paddingRight: 100 }}>The test will take 5 minutes and provide instant results. Please answer ALL questions.</p>
-                            <p style={{ paddingLeft: 150, paddingRight: 100 }}> Disclaimer: This is not an official COVID-19 test. For an official test, please contact a nearby hospital or testing center. For emergencies, please call 112. </p>
-                            <div style={{ marginTop: 60 }}>
-                                <p style={{ paddingLeft: 150, paddingRight: 100 }}> Click below to start your test!</p>
+                        <section class="py-5">
+                            <div class="covid_test">
+                                <div class="container">
+                                    <div class="info">
+                                        <h3 class="text-center">COVID-19 Online Test</h3>
+                                        <p class="text-left">The test will take 5 minutes and provide instant results. Please answer ALL questions.</p>
+                                        <p class="text-left"> Disclaimer: This is not an official COVID-19 test. For an official test, please contact a nearby hospital or testing center. </p>
+                                        <p class="text-left"> For emergencies, please call 112. </p>
+                                    </div>
+                                    <div class="text-center info_click" style={{ marginTop: 60 }}>
+                                        <p> Click below to start your test!</p>
+                                    </div>
+                                    <div style={{ textAlign: "center", marginTop: 50 }}>
+                                        <button type="submit" class="btn btn-primary btn-lg" style={{backgroundColor: "#388087"}} onClick={this.next}>Take Test</button>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            <div style={{ textAlign: "center", marginTop: 50 }}>
-                                <button type="submit" class="btn btn-primary btn-lg" style={{backgroundColor: "#388087"}} onClick={this.next}>Take Test</button>
-                            </div>
-                        </div>
+                        </section>
+                        
                         <Footer />
+                        
                     </div>
 
                 );
