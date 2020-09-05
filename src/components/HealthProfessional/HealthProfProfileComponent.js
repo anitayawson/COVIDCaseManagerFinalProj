@@ -33,7 +33,7 @@ class HealthProfProfileComponent extends Component {
 
     render(){
     return (
-        <div>
+        <div style={{ backgroundColor: "#F6F6F2" }}>
             <Navbar2 />
             <div class="container" style={{ marginTop: 180, marginBottom: 60 }}>
                 <h3 style={{ marginBottom: 30, marginLeft: 200 }}>Health Personnel Profile</h3>

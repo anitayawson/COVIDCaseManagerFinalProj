@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import Navbar from '../navbar';
 import Footer from '../footer'
+import { Link } from 'react-router-dom'
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+
+import Down from '../../images/down.svg'
+import $ from "jquery"
 
 export class ResultPage extends Component {
   next = (e) => {
@@ -11,96 +16,158 @@ export class ResultPage extends Component {
     e.preventDefault();
     this.props.prev();
   };
+
+ 
+
+//   componentDidMount = () =>{
+//     // alert("document ready")
+    
+//     $("#thc").on('click', function(){
+//       alert("this is a test")
+  
+//       let favorite = [];
+
+//       $.each($("input[name='symptoms']:checked"),
+//       function() {
+        
+//         favorite.push($(this).val());
+//       });
+
+//       $.each(favorite, function (i, val){
+//         alert("faourite");
+//           if (val === "headache" || val === "skinrash"){
+//             alert("yes plis")
+//             // $("#the_arrow").animate({
+//             //   left: '60%'
+//             // });
+            
+//           }
+//       })
+      
+//     })
+  
+// }
+  // componentDidMount(){
+  //   $.urlParam = function (name) {
+  //     var results = new RegExp('[\?&]' + name + '=([^&#]*)')
+  //                       .exec(window.location.search);
+  
+  //     return (results !== null) ? results[1] || 0 : false;
+  // }
+  //   $(document).ready(function (){ 
+  //     alert("about to move arrow");
+  //     $("#the_arrow").animate({
+  //       left: $.urlParam('left')
+  //     });
+  //    })
+  // }
+
   render() {
     return (
-      <div className="container" style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: "20%" }}>
+      <div>
         <Navbar />
-        <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
-          <div className="col">
-            <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style={{ width: "100%" }}
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+        <div className="container" style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: "20%" }}>
+          <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
+            <div className="col">
+              <div class="progress" style={{ width: 650, marginBottom: 30}}>
+                <div class="progress-bar" role="progressbar" style={{ width: "100%", backgroundColor: "#388087" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
           </div>
-        </div>
+          
+     
 
-        <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
-          <div className="col">
-            <h4>Your Test Result</h4>
 
-            <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style={{ width: "15%" }}
-                aria-valuenow="15"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-              <div
-                class="progress-bar bg-success"
-                role="progressbar"
-                style={{ width: "30%" }}
-                aria-valuenow="30"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style={{ width: "20%" }}
-                aria-valuenow="20"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+          <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
+            <div className="col">
+              <h4 style={{ position: "relative", left: "27%" }}>Your Test Results</h4>
+
+              {/* progress bar!!! */}
+
+              <div class="the_arrow" style={{ width: "660px", height: "200px" }}>
+              <img id="the_arrow" src={Down} style={{height: "35px", position: "relative", top:"30px"}} />
+                
+              
+                <div class="progress" style={{ width: 650, marginTop: 30, height: 10 }}>
+                  <div class="progress-bar" role="progressbar" style={{width: "33%", backgroundColor: "green"}} aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" style={{width: "33%", backgroundColor: "orange"}} aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" style={{width: "34%", backgroundColor: "red"}} aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <p>Action Steps:</p>
-        <div className="mt-3">
-          <input className="line-text" type="radio" name="measures" />
-          Stay safe and keep following COVID-19 measures
-        </div>
+          {/* ****************** */}
 
-        <div>
-          <input className="line-text" type="radio" name="consultation" />
-          Please request a consultation
-          <button className="rounded-0">Click here</button>
-        </div>
 
-        <div>
-          <input className="line-text" type="radio" name="request" />
-          Please request a consultation
-          <button className="rounded-0">Click here</button>
-        </div>
-
-        <div className="row">
-          <div className="col">
-            <div className=" mt-3">
-              <button type="submit" className="btn btn-primary ">
-                Cancel
-              </button>
-              <button
-                type="submit"
-                className="rounded-pill"
-                onClick={this.prev}
-              >
-                prev
-              </button>
-              <button
-                type="submit"
-                className="rounded-pill"
-                onClick={this.next}
-              >
-                Next
-              </button>
+          <div style={{ paddingLeft: 150, paddingRight: 100 }}>
+            <h6>Action Steps:</h6>
+            <div className="mt-3">
+              <p>Stay safe and keep following COVID-19 measures.</p>
+            </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <p>Please request a consultation.</p>
+              <div>
+                <button type="button" class="btn" style={{ color: "blue" }} data-toggle="modal" data-target="#exampleModal">Click here</button>
+              </div>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Consultation Request</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Your profile information and test results will be sent to a Licensed Health Professional, who will contact you within
+                      72 hours of your request. </p>
+                      <p>If this is an emergency, please call 112.</p>
+                      <textarea class="form-control form-control-sm" type="text" style={{ height: 100 }} placeholder="Please include any additional information here..." ></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" style={{ backgroundColor: "#388087" }}>Submit Request</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <p>Please request a consultation.</p>
+              <div>
+                <button type="button" class="btn" style={{ color: "blue" }} data-toggle="modal" data-target="#exampleModal">Click here</button>
+              </div>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Consultation Request</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Your profile information and test results will be sent to a licenced health professionional, who will contact you within
+                      72 hours of your request.</p>
+                      <p>If this is an emergency, please call 112.</p>
+                      <textarea class="form-control form-control-sm" style={{ height: 100 }} type="text" placeholder="Please include any additional information here..."></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" style={{ backgroundColor: "#388087" }}>Submit Request</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row" style={{ marginTop: 40 }}>
+              <div className="col">
+                <div className=" mt-3" style={{ position: "relative", left: "29%", marginTop: 10 }}>
+                <button id="thc" type="submit" className="btn btn-primary btn-lg" onClick={this.componentDidMount} style={{backgroundColor: "#388087"}}>Get Results</button>
+                  <Link to="/resources"><button type="submit" style={{ backgroundColor: "#388087" }} className="btn btn-primary btn-lg">Go to Resources</button></Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
