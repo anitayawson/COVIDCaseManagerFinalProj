@@ -8,6 +8,7 @@ import Down from '../../images/down.svg'
 import $ from "jquery"
 
 export class ResultPage extends Component {
+  
   next = (e) => {
     e.preventDefault();
     this.props.next();
@@ -37,9 +38,9 @@ export class ResultPage extends Component {
 //         alert("faourite");
 //           if (val === "headache" || val === "skinrash"){
 //             alert("yes plis")
-//             // $("#the_arrow").animate({
-//             //   left: '60%'
-//             // });
+//             $("#the_arrow").animate({
+//               left: '60%'
+//             });
             
 //           }
 //       })
@@ -47,20 +48,30 @@ export class ResultPage extends Component {
 //     })
   
 // }
-  // componentDidMount(){
+
+animateResult = ()=>{
+  $("#the_arrow").animate({
+    left: '60%'
+  });
+}
+  componentDidMount(){
+  //   const that = this;
   //   $.urlParam = function (name) {
   //     var results = new RegExp('[\?&]' + name + '=([^&#]*)')
   //                       .exec(window.location.search);
   
   //     return (results !== null) ? results[1] || 0 : false;
   // }
-  //   $(document).ready(function (){ 
-  //     alert("about to move arrow");
-  //     $("#the_arrow").animate({
-  //       left: $.urlParam('left')
-  //     });
-  //    })
-  // }
+    if (!this.props.result) return false;
+    const percent = (this.props.result/100)*95;
+    $(document).ready( ()=>{ 
+      //alert("about to move arrow");
+      console.log(this.props);
+      $("#the_arrow").animate({
+        left:percent+'%'
+      });
+     })
+  }
 
   render() {
     return (
@@ -164,7 +175,6 @@ export class ResultPage extends Component {
             <div className="row" style={{ marginTop: 40 }}>
               <div className="col">
                 <div className=" mt-3" style={{ position: "relative", left: "29%", marginTop: 10 }}>
-                <button id="thc" type="submit" className="btn btn-primary btn-lg" onClick={this.componentDidMount} style={{backgroundColor: "#388087"}}>Get Results</button>
                   <Link to="/resources"><button type="submit" style={{ backgroundColor: "#388087" }} className="btn btn-primary btn-lg">Go to Resources</button></Link>
                 </div>
               </div>
@@ -176,5 +186,9 @@ export class ResultPage extends Component {
     );
   }
 }
+
+// ResultPage.defaultProps = {
+//   result: 100,
+// };
 
 export default ResultPage;

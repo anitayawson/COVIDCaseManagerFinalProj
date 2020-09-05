@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom'
 class Test6 extends Component {
 
   next = (e) => {
-    e.preventDefault();
+    //e.preventDefault();
     this.props.next();
   };
   back = (e) => {
@@ -90,7 +90,7 @@ class Test6 extends Component {
                 <textarea style={{ marginLeft: 150 }} className="border"></textarea>
                 <button type="reset" className="rounded-0">clear</button> */}
                 <div className="mt-3" style={{ marginLeft: 150, position: "relative", left: "12%" }}>
-                <Link to="/results"><button id="thc" type="submit" className="btn btn-primary btn-lg" style={{backgroundColor: "#388087"}}>Get Results</button></Link>
+                <button id="thc" type="button" className="btn btn-primary btn-lg" style={{backgroundColor: "#388087"}} onClick={this.next}>Get Results</button>
                  {/* <button id="thc" type="submit" className="btn btn-primary btn-lg" style={{backgroundColor: "#388087"}}>Get Results</button> */}
                   <button type="submit" className="btn" style={{color: "blue"}} onClick={this.cancel}>Cancel</button>
                 </div>

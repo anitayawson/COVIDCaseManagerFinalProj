@@ -3,8 +3,29 @@ import Navbar from '../navbar';
 import Footer from '../footer'
 
 class Test4 extends Component {
-  next = (e) => {
+  constructor(props){
+    super(props);
+    this.state = {
+      movement : 0,
+    }
+  }
+  handleChange = (event) => {
+    const target = event.target;
+    const value = parseInt(target.value);
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
+  }
+  handleSubmit = (e) => {
     e.preventDefault();
+    console.log(this.state);
+   this.props.calculateResults(this.state.movement )
+    this.next()
+  }
+  next = (e) => {
+    // e.preventDefault();
     this.props.next();
   };
   back = (e) => {
@@ -35,7 +56,7 @@ class Test4 extends Component {
               </div>
             </div>
           </div>
-
+          <form onSubmit={this.handleSubmit}>
           <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
             <div className="col">
               <h6>
@@ -43,13 +64,23 @@ class Test4 extends Component {
                 and movement?
               </h6>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
+                <input onChange={this.handleChange}
+                    class=" form-check-input"
+                    type="radio"
+                    name="movement"
+                    id="movement"
+                    value="10" />
                 <label class="form-check-label" for="exampleRadios1">
                   <h6>YES</h6>
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                <input onChange={this.handleChange}
+                    class=" form-check-input"
+                    type="radio"
+                    name="movement"
+                    id="movement"
+                    value="0"/>
                 <label class="form-check-label" for="exampleRadios2">
                   <h6>NO</h6>
                 </label>
@@ -62,18 +93,19 @@ class Test4 extends Component {
 
               <div className="mt-3" style={{ display: "flex", flexDirection: "row" }}>
                 <div style={{ position: "relative", left: "38%", marginTop: 10 }}>
-                  <button type="submit" className="btn" style={{color: "blue"}} onClick={this.cancel}>Cancel</button>
+                  <button type="button" className="btn" style={{color: "blue"}} onClick={this.cancel}>Cancel</button>
                 </div>
                 <div style={{ position: "relative", left: "23%", marginTop: 10 }}>
-                  <button type="submit" className="btn btn-primary" style={{backgroundColor: "#388087"}} onClick={this.back}>Back</button>
+                  <button type="button" className="btn btn-primary" style={{backgroundColor: "#388087"}} onClick={this.back}>Back</button>
                 </div>
                 <div style={{ position: "relative", left: "36%", marginTop: 10 }}>
-                  <button type="submit" className="btn btn-primary" style={{backgroundColor: "#388087"}} onClick={this.next}>Next</button>
+                  <button type="submit" className="btn btn-primary" style={{backgroundColor: "#388087"}}>Next</button>
                 </div>
               </div>
             </div>
 
           </div>
+          </form>
         </div>
         <Footer />
       </div>

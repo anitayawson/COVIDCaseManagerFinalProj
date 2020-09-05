@@ -18,7 +18,8 @@ export default class TestPageComponent extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            step: 0
+            step: 0,
+            finalResults: 0
         }
     }
     next = (e) => {
@@ -29,7 +30,13 @@ export default class TestPageComponent extends Component {
         const { step } = this.state
         this.setState({ step: step - 1 })
     }
- 
+    calculateResults = (scores) => {
+        this.setState((prevState) => {
+            console.log(scores, prevState.finalResults);
+            return { finalResults: prevState.finalResults + scores}
+        })
+    }
+    
 
     cancel = (e) => {
         const { step } = this.state
@@ -68,6 +75,7 @@ export default class TestPageComponent extends Component {
 
 
     render() {
+        console.log(this.state.finalResults);
         switch (this.state.step) {
             case 0:
 
@@ -117,32 +125,32 @@ export default class TestPageComponent extends Component {
                 );
             case 1:
                 return (
-                    <TestPage1 next={this.next} cancel={this.cancel} />
+                    <TestPage1 next={this.next} cancel={this.cancel} calculateResults={this.calculateResults} />
                 );
             case 2:
                 return (
-                    <TestPage2 next={this.next} back={this.back} cancel={this.cancel} />
+                    <TestPage2 next={this.next} back={this.back} cancel={this.cancel} calculateResults={this.calculateResults} />
                 );
             case 3:
                 return (
-                    <TestPage3 next={this.next} back={this.back} cancel={this.cancel} />
+                    <TestPage3 next={this.next} back={this.back} cancel={this.cancel} calculateResults={this.calculateResults} />
                 );
             case 4:
                 return (
-                    <TestPage4 next={this.next} back={this.back} cancel={this.cancel} />
+                    <TestPage4 next={this.next} back={this.back} cancel={this.cancel} calculateResults={this.calculateResults} />
                 )
             case 5:
                 return (
-                    <TestPage5 next={this.next} back={this.back} cancel={this.cancel} />
+                    <TestPage5 next={this.next} back={this.back} cancel={this.cancel} calculateResults={this.calculateResults} />
                 );
             case 6:
                 return (
-                    <TestPage6 cancel={this.cancel} />
+                    <TestPage6 cancel={this.cancel}  next={this.next} />
                 );
             case 7:
                 return (
                     <TestResult next={this.next} back={this.back} cancel={this.cancel}
-
+                        result={this.state.finalResults}
 
                     />
                 );
