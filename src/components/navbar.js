@@ -36,7 +36,7 @@ export default function navbar() {
                         </div>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuAvatar">
                             <Link to="/profile" class="dropdown-item">Edit Profile</Link>
-                            <a class="dropdown-item" href="#">Account Settings</a>
+                            {/* <a class="dropdown-item" href="#">Account Settings</a> */}
                             <Link to="/" class="dropdown-item">Log out</Link>
                         </div>
                     </div>

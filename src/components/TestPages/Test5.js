@@ -3,78 +3,112 @@ import Navbar from '../navbar';
 import Footer from '../footer'
 
 class Test5 extends Component {
-    next = (e) => {
-        e.preventDefault();
-        this.props.next();
-      };
-      prev = (e) => {
-        e.preventDefault();
-        this.props.prev();
-      };
+  constructor(props){
+    super(props);
+    this.state = {
+      discoloration : 0,
+    }
+  }
+  handleChange = (event) => {
+    const target = event.target;
+    const value = parseInt(target.value);
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
+  }
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state);
+   this.props.calculateResults(this.state.discoloration )
+    this.next()
+  }
+  next = (e) => {
+    // e.preventDefault();
+    this.props.next();
+  };
+  back = (e) => {
+    e.preventDefault();
+    this.props.back();
+  };
+  cancel = (e) => {
+    e.preventDefault();
+    this.props.cancel();
+  }
   render() {
     return (
       <div>
         <Navbar />
         <div className="container" style={{ marginLeft: 200, marginTop: 180, marginRight: 200, marginBottom: "20%" }}>
-          
+
           <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
             <div className="col">
-              <div class="progress" style={{width: "70%"}}>
+              <div class="progress" style={{ width: 650, marginBottom: 30 }}>
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style={{width: "50%", backgroundColor: "#388087"}}
-                  aria-valuenow="50"
+                  style={{ width: "64%", backgroundColor: "#388087" }}
+                  aria-valuenow="64"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
               </div>
             </div>
           </div>
+          <form onSubmit={this.handleSubmit}>
 
           <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
             <div className="col">
-              <p>
+              <h6>
                 Are any individuals experiencing unexplained sores on soles of
-                feet or discoloration of fingers/toes?
-              </p>
-              <button type="submit" className="rounded-pill">
-                NO
-              </button>
-
-              <button type="submit" className="rounded-pill">
-                YES
-              </button>
+                feet <p> or discoloration of fingers/toes?</p>
+              </h6>
+              <div class="form-check">
+                <input onChange={this.handleChange}
+                    class=" form-check-input"
+                    type="radio"
+                    name="discoloration"
+                    id="discoloration"
+                    value="10"  />
+                <label class="form-check-label" for="exampleRadios1">
+                  <h6>YES</h6>
+                </label>
+              </div>
+              <div class="form-check">
+                <input onChange={this.handleChange}
+                    class=" form-check-input"
+                    type="radio"
+                    name="discoloration"
+                    id="discoloration"
+                    value="0" />
+                <label class="form-check-label" for="exampleRadios2">
+                  <h6>NO</h6>
+                </label>
+              </div>
             </div>
           </div>
-          
-          <div className="row">
-              <div className="col">
 
-                  <div className="mt-3">
-              <button type="submit" className="btn btn-primary ">
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  className="rounded-pill"
-                  onClick={this.prev}
-                >
-                  prev
-                </button>
-                <button
-                  type="submit"
-                  className="rounded-pill"
-                  onClick={this.next}
-                >
-                  Next
-                </button>
+          <div className="row" style={{marginTop: 73}}>
+            <div className="col">
+
+              <div className="mt-3" style={{ display: "flex", flexDirection: "row" }}>
+                <div style={{ position: "relative", left: "38%", marginTop: 10 }}>
+                  <button type="button" className="btn" style={{color: "blue"}} onClick={this.cancel}>Cancel</button>
                 </div>
+                <div style={{ position: "relative", left: "23%", marginTop: 10 }}>
+                  <button type="button" className="btn btn-primary " style={{backgroundColor: "#388087"}} onClick={this.back}>Back</button>
                 </div>
+                <div style={{ position: "relative", left: "36%", marginTop: 10 }}>
+                  <button type="submit" className="btn btn-primary" style={{backgroundColor: "#388087"}} >Next</button>
                 </div>
-          <Footer />
+              </div>
+            </div>
+          </div>
+          </form>
         </div>
-        </div>
+        <Footer />
+      </div>
     );
   }
 }
