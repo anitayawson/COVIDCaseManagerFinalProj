@@ -27,8 +27,8 @@ class Test6 extends Component {
 
       // alert("document ready")
       
-      $("#thc").on('click', function(){
-        alert("fingers crossed")
+     // $("#thc").on('click', function(){
+       /// alert("fingers crossed")
     
         // let favorite = [];
 
@@ -49,7 +49,7 @@ class Test6 extends Component {
         // $("#the_arrow").animate({
         //   left: '60%'
         // });
-      })
+     // })
     
 
   }
