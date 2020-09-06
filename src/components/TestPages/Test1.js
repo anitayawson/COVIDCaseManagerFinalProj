@@ -82,7 +82,7 @@ class Test1 extends Component {
 
             <div className="row" style={{}}>
               <div className="col">
-                <h6 class="" style={{ marginLeft: 150 }}>
+                <h6 class="" style={{ marginLeft: 170 }}>
                   Please select ALL symptoms that apply.
                 </h6>
               </div>
@@ -234,7 +234,7 @@ class Test1 extends Component {
                 </div>
                 <div class="row">
                   <div class="col-md-6 covid_que">
-                    <h6 class="">
+                    <h6 class="" style={{ marginLeft: 35 }}>
                       How many individuals are experiencing one or more of the
                       selected symptoms?
                     </h6>
@@ -246,7 +246,7 @@ class Test1 extends Component {
                       class="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
-                      style={{ marginLeft: 15, width: 70 }}
+                      style={{ marginLeft: 15, width: 70, borderWidth: 2 }}
                     ></input>
                   </div>
                 </div>
@@ -256,7 +256,7 @@ class Test1 extends Component {
                       className="mt-3"
                       style={{ display: "flex", flexDirection: "flex-start" }}
                     >
-                      <div style={{ position: "relative", right: "460px" }}>
+                      <div style={{ position: "relative", right: "500px" }}>
                         <button
                           type="button"
                           className="btn btn-primary"
@@ -266,7 +266,7 @@ class Test1 extends Component {
                           Back
                         </button>
                       </div>
-                      <div style={{ position: "relative", right: "380px" }}>
+                      <div style={{ position: "relative", right: "450px" }}>
                         <button
                           type="submit"
                           className="btn btn-primary"
