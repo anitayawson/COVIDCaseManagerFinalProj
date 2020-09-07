@@ -123,7 +123,7 @@ class HomepageComponent extends Component {
                                             <label className="form-check-label" for="defaultCheck1">Keep me signed in</label>
                                         </div>
                                         <div className="group">
-                                            <a href="/professionalprofile"><input type="submit" className="button" value="Sign In" /></a>
+                                            <a href="/portallogin"><input type="submit" className="button" value="Sign In" /></a>
                                         </div>
                                         <div className="hr"></div>
                                         <div className="foot-lnk"><a href="#forgot">Forgot Password?</a> Don't have account?<Link to="/signup"> Sign up</Link>

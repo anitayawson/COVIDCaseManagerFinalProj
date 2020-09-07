@@ -142,22 +142,9 @@ class HealthProfProfileComponent extends Component {
                             </div>
                         </div>
 
-                   <a href= "/portallogin">   
-                         <button
-                        type="button"
-                        className="rounded-pill"
-                        style={{
-                            margin: 10,
-                            marginLeft: 300,
-                            background:"lightgreen",
-                            color:"black" ,
-                            marginTop:25
-                            
-                        }}
-                        >
-                        Save Changes
-                        </button>
-                    </a>
+                        <div style={{ textAlign: "center", marginTop: 20, position: "relative", left: "45%" }}>
+                                    <a href="/portallogin"><button type="button" class="btn btn-info">Save</button></a>
+                                    </div> 
                     </div>
                 </form>
             </div>

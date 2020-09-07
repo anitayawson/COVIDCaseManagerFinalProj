@@ -169,25 +169,9 @@ class PatientProfileComponent extends Component {
               </div>
             </div>
 
-            {/* <div style={{ textAlign: "center", marginTop: 20 }}>
+            <div style={{ textAlign: "center", marginTop: 20, position: "relative", left: "45%" }}>
                                     <a href="/test"><button type="button" class="btn btn-info">Save</button></a>
-                                    </div> */}
-          <Link to="/test">
-            <button
-              type="submit"
-              className="rounded-pill"
-              style={{
-                margin: 10,
-                marginLeft: 300,
-                background:"lightgreen",
-                color:"black" ,
-                marginTop:25
-
-              }}
-            >
-              Save Changes
-            </button>
-            </Link>
+                                    </div> 
           </div>
         </form>
       </div>

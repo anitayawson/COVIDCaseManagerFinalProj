@@ -60,7 +60,7 @@ class Test5 extends Component {
 
           <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
             <div className="col">
-              <h6>
+              <h6 style={{marginBottom: 25}}>
                 Are any individuals experiencing unexplained sores on soles of
                 feet <p> or discoloration of fingers/toes?</p>
               </h6>

@@ -69,7 +69,7 @@ class Test2 extends Component {
               style={{ paddingLeft: 150, paddingRight: 100 }}
             >
               <div className="col">
-                <h6>
+                <h6 style={{marginBottom: 25}}>
                   In the past 14 days, have any individuals had contact with a
                   known COVID-19 patient?
                 </h6>

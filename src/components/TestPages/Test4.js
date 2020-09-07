@@ -59,7 +59,7 @@ class Test4 extends Component {
           <form onSubmit={this.handleSubmit}>
           <div className="row" style={{ paddingLeft: 150, paddingRight: 100 }}>
             <div className="col">
-              <h6>
+              <h6 style={{marginBottom: 25}}>
                 Are any individuals experiencing chest pain or loss of speech
                 and movement?
               </h6>

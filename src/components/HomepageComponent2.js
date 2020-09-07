@@ -95,7 +95,7 @@ class HomepageComponent2 extends Component {
                                             />
                                         </div>
                                         <div className="group">
-                                            <Link to=""><input type="submit" className="button" value="Sign Up" /></Link>
+                                            <Link to="/profile"><input type="submit" className="button" value="Sign Up" /></Link>
                                         </div>
                                         <div className="hr"></div>
                                         <div className="foot-lnk">
