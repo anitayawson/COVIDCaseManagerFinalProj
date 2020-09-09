@@ -8,7 +8,7 @@ class HomepageComponent2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            Username: "",
+            username: "",
             emailaddress: "",
             password: "",
             confirmpassword: "",
@@ -86,11 +86,11 @@ class HomepageComponent2 extends Component {
                                             <label htmlFor="pass" className="label">Confirm Password</label>
                                             <input
                                                 id="pass"
-                                                type="password"
+                                                type="confirmpassword"
                                                 className="input input_anim"
-                                                data-type="password"
+                                                data-type="confirmpassword"
                                                 value={this.state.confirmpassword}
-                                                name="conformpassword"
+                                                name="confirmpassword"
                                                 onChange={this.handleChange}
                                             />
                                         </div>
@@ -113,7 +113,7 @@ class HomepageComponent2 extends Component {
                                         </div>
                                         <div className="group">
                                             <label htmlFor="pass" className="label">Email Address</label>
-                                            <input id="pass" type="text" className="input input_anim"
+                                            <input id="pass" type="email" className="input input_anim"
                                                 value={this.state.emailaddress}
                                                 name="emailaddress"
                                                 onChange={this.handleChange}
@@ -137,7 +137,7 @@ class HomepageComponent2 extends Component {
                                                 id="pass"
                                                 type="password"
                                                 className="input input_anim"
-                                                data-type="password"
+                                                data-type="confirmpassword"
                                                 value={this.state.confirmpassword}
                                                 name="confirmpassword"
                                                 onChange={this.handleChange}
