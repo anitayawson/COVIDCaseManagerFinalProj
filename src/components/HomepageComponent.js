@@ -19,7 +19,7 @@ class HomepageComponent extends Component {
     }
     handleChange = (e) => {
         e.preventDefault();
-        this.setState({ [e.target.name]: e.target.value });
+        // this.setState({ [e.target.name]: e.target.value });
     };
     handleSubmit = (e) => {
         e.preventDefault();
@@ -88,7 +88,7 @@ class HomepageComponent extends Component {
                                         <div className="group">
                                             <label for="user" className="label">Hospital ID</label>
                                             <input id="user" type="text" className="input input_anim"
-                                                value={this.state.hospitalId}
+                                                // value={this.state.hospitalId}
                                                 name="hospitalId"
                                                 onChange={this.handleChange}
                                             />
@@ -96,7 +96,7 @@ class HomepageComponent extends Component {
                                         <div class="group">
                                             <label for="pass" className="label">Email Address</label>
                                             <input id="pass" type="email" className="input input_anim"
-                                                value={this.state.emailaddress}
+                                                // value={this.state.emailaddress}
                                                 name="emailaddress"
                                                 onChange={this.handleChange}
                                             />
@@ -108,7 +108,7 @@ class HomepageComponent extends Component {
                                                 type="password"
                                                 className="input input_anim"
                                                 data-type="password"
-                                                value={this.state.password}
+                                                // value={this.state.password}
                                                 name="password"
                                                 onChange={this.handleChange}
                                             />
