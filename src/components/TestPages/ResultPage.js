@@ -91,8 +91,8 @@ export class ResultPage extends Component {
                       <textarea class="form-control form-control-sm" type="text" style={{ height: 100 }} placeholder="Please include any additional information here..." ></textarea>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" style={{ backgroundColor: "#388087" }}>Submit Request</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={this.cancel}>Cancel</button>
+                      <button type="button" class="btn btn-primary"  data-dismiss="modal"  onClick={this.cancel} style={{ backgroundColor: "#388087" }}>Submit Request</button>
                     </div>
                   </div>
                 </div>
@@ -120,8 +120,8 @@ export class ResultPage extends Component {
                       <textarea class="form-control form-control-sm" style={{ height: 100 }} type="text" placeholder="Please include any additional information here..."></textarea>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" style={{ backgroundColor: "#388087" }}>Submit Request</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal"   onClick={this.cancel}>Cancel</button>
+                      <button type="button" class="btn btn-primary"  data-dismiss="modal"  onClick={this.cancel} style={{ backgroundColor: "#388087" }}>Submit Request</button>
                     </div>
                   </div>
                 </div>

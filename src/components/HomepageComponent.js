@@ -7,7 +7,7 @@ class HomepageComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            Username: "",
+            username: "",
             emailaddress: "",
             password: "",
             confirmpassword: "",
@@ -52,7 +52,7 @@ class HomepageComponent extends Component {
                                                 id="user"
                                                 type="text"
                                                 className="input input_anim"
-                                                value={this.state.username}
+                                                // value={this.state.username}
                                                 name="username"
                                                 onChange={this.handleChange}
                                             />
@@ -64,7 +64,7 @@ class HomepageComponent extends Component {
                                                 type="password"
                                                 className="input input_anim"
                                                 data-type="password"
-                                                value={this.state.password}
+                                                // value={this.state.password}
                                                 name="password"
                                                 onChange={this.handleChange}
                                             />
