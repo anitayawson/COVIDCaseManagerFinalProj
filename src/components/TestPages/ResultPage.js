@@ -94,7 +94,7 @@ export class ResultPage extends Component {
                       <textarea class="form-control form-control-sm" type="text" style={{ height: 100 }} placeholder="Please include any additional information here..." ></textarea>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={this.cancle}>Cancle</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={this.cancle}>Cancel</button>
                     {/* <a href="/resultpage"> */}
                       <button type="button" class="btn btn-primary"  data-dismiss="modal" onClick={this.cancle} style={{ backgroundColor: "#388087"  }}>Submit Request</button>
                       {/* </a> */}
