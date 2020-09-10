@@ -33,6 +33,8 @@ export class ResultPage extends Component {
     })
   }
 
+  
+
   render() {
     return (
       <div>
@@ -84,17 +86,22 @@ export class ResultPage extends Component {
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
+                   {/* <form onSubmit={this.handleSubmit}> */}
                     <div class="modal-body">
-                      <p>Your profile information and test results will be sent to a Licensed Health Professional, who will contact you within
+                      <p className="">Your profile information and test results will be sent to a Licensed Health Professional, who will contact you within
                       72 hours of your request. </p>
                       <p>If this is an emergency, please call 112.</p>
                       <textarea class="form-control form-control-sm" type="text" style={{ height: 100 }} placeholder="Please include any additional information here..." ></textarea>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={this.cancel}>Cancel</button>
-                      <button type="button" class="btn btn-primary"  data-dismiss="modal"  onClick={this.cancel} style={{ backgroundColor: "#388087" }}>Submit Request</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={this.cancle}>Cancle</button>
+                    {/* <a href="/resultpage"> */}
+                      <button type="button" class="btn btn-primary"  data-dismiss="modal" onClick={this.cancle} style={{ backgroundColor: "#388087"  }}>Submit Request</button>
+                      {/* </a> */}
                     </div>
+                    {/* </form> */}
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -120,8 +127,10 @@ export class ResultPage extends Component {
                       <textarea class="form-control form-control-sm" style={{ height: 100 }} type="text" placeholder="Please include any additional information here..."></textarea>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal"   onClick={this.cancel}>Cancel</button>
-                      <button type="button" class="btn btn-primary"  data-dismiss="modal"  onClick={this.cancel} style={{ backgroundColor: "#388087" }}>Submit Request</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={this.cancle}>Cancel</button>
+                   {/* <a href="/resultpage">  */}
+                   <button type="button" class="btn btn-primary"  data-dismiss="modal" onClick={this.cancle} style={{ backgroundColor: "#388087" }}>Submit Request</button>
+                   {/* </a> */}
                     </div>
                   </div>
                 </div>
@@ -141,6 +150,7 @@ export class ResultPage extends Component {
     );
   }
 }
+
 
 // ResultPage.defaultProps = {
 //   result: 100,
