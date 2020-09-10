@@ -27,7 +27,7 @@ export default class ConsultRequestList extends Component {
                         </div></a>
                         <a href=""><div class="row" style={{height: "100px", color: "black"}}>
                             <div class="col-lg-8" style={{backgroundColor: "rgba(196,196,196,0.1)", textAlign: "left", paddingLeft:"40px", paddingTop: "15px", lineHeight: "15px"}}>
-                                <p>Access bank, Cantonments Branch</p>
+                                <p>Access Bank, Cantonments Branch</p>
                                 <p>Cantonments, Accra</p>
                                 <p style={{color: "red"}}>5 suspected cases</p>
                             </div>
