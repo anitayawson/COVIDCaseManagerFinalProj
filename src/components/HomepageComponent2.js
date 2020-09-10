@@ -7,7 +7,7 @@ class HomepageComponent2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Username: "",
+      username: "",
       emailaddress: "",
       password: "",
       confirmpassword: "",
@@ -19,7 +19,7 @@ class HomepageComponent2 extends Component {
   }
   handleChange = (e) => {
     e.preventDefault();
-    this.setState({ [e.target.name]: e.target.value });
+    // this.setState({ [e.target.name]: e.target.value });
   };
   handleSubmit = (e) => {
     e.preventDefault();
@@ -80,7 +80,7 @@ class HomepageComponent2 extends Component {
                         id="username"
                         type="text"
                         className="input input_anim"
-                        value={this.state.username}
+                        // value={this.state.username}
                         name="username"
                         onChange={this.handleChange}
                       />
@@ -94,7 +94,7 @@ class HomepageComponent2 extends Component {
                         type="email"
                         className="input input_anim"
                         data-type="email"
-                        value={this.state.emailaddress}
+                        // value={this.state.emailaddress}
                         name="emailaddress"
                         onChange={this.handleChange}
                       />
@@ -108,7 +108,7 @@ class HomepageComponent2 extends Component {
                         type="password"
                         className="input input_anim"
                         data-type="password"
-                        value={this.state.password}
+                        // value={this.state.password}
                         name="password"
                         onChange={this.handleChange}
                       />
@@ -119,10 +119,10 @@ class HomepageComponent2 extends Component {
                       </label>
                       <input
                         id="pass"
-                        type="password"
+                        type="confirmpassword"
                         className="input input_anim"
-                        data-type="password"
-                        value={this.state.confirmpassword}
+                        data-type="confirmpassword"
+                        // value={this.state.confirmpassword}
                         name="conformpassword"
                         onChange={this.handleChange}
                       />
@@ -155,7 +155,7 @@ class HomepageComponent2 extends Component {
                         id="user"
                         type="text"
                         className="input input_anim"
-                        value={this.state.hospitalId}
+                        // value={this.state.hospitalId}
                         name="hospitalId"
                         onChange={this.handleChange}
                       />
@@ -166,9 +166,9 @@ class HomepageComponent2 extends Component {
                       </label>
                       <input
                         id="pass"
-                        type="text"
+                        type="email"
                         className="input input_anim"
-                        value={this.state.emailaddress}
+                        // value={this.state.emailaddress}
                         name="emailaddress"
                         onChange={this.handleChange}
                       />
@@ -182,7 +182,7 @@ class HomepageComponent2 extends Component {
                         type="password"
                         className="input input_anim"
                         data-type="password"
-                        value={this.state.password}
+                        // value={this.state.password}
                         name="password"
                         onChange={this.handleChange}
                       />
@@ -194,10 +194,10 @@ class HomepageComponent2 extends Component {
                       </label>
                       <input
                         id="pass"
-                        type="password"
+                        type="confirmpassword"
                         className="input input_anim"
-                        data-type="password"
-                        value={this.state.confirmpassword}
+                        data-type="confirmpassword"
+                        // value={this.state.confirmpassword}
                         name="confirmpassword"
                         onChange={this.handleChange}
                       />
