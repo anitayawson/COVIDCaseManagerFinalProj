@@ -32,9 +32,9 @@ class HomepageComponent extends Component {
                 <div className="homepage">
                     <div className="homepage-left">
                         <img src={Logo} className="App-logo" alt="logo" />
-                        <h1 style={{ fontFamily: "Verdana", fontWeight: "bold", letterSpacing: "4px", }}>COVID-19 CASE</h1>
-                        <h1 style={{ fontFamily: "Verdana", fontWeight: "bold", letterSpacing: "4px", }}>MANAGER</h1>
-                        <h6 style={{ letterSpacing: "6px" }}>ONLINE DIAGNOSTIC SYSTEM</h6>
+                        <h1 style={{ fontFamily: "Verdana", fontWeight: "bold", letterSpacing: "4px", }}>COVID-19 VIRTUAL</h1>
+                        <h1 style={{ fontFamily: "Verdana", fontWeight: "bold", letterSpacing: "4px", }}>DIAGNOSTIC PLATFORM</h1>
+                        <h6 style={{ letterSpacing: "6px" }}>AN ONLINE DIAGNOSTIC SYSTEM</h6>
                     </div>
                     <div className="homepage-divider"></div>
                     <div className="login-section">

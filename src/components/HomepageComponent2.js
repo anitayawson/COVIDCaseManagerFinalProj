@@ -39,7 +39,7 @@ class HomepageComponent2 extends Component {
                 letterSpacing: "4px",
               }}
             >
-              COVID-19 CASE
+              COVID-19 VIRTUAL
             </h1>
             <h1
               style={{
@@ -48,9 +48,9 @@ class HomepageComponent2 extends Component {
                 letterSpacing: "4px",
               }}
             >
-              MANAGER
+              DIAGNOSTIC PLATFORM
             </h1>
-            <h6 style={{ letterSpacing: "6px" }}>ONLINE DIAGNOSTIC SYSTEM</h6>
+            <h6 style={{ letterSpacing: "6px" }}> AN ONLINE DIAGNOSTIC SYSTEM</h6>
           </div>
           <div className="homepage-divider"></div>
           <div className="login-section">

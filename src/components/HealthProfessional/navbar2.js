@@ -22,9 +22,9 @@ export default function navbar2(){
                 
             <nav class="nav navbar navbar-light navigation">
                 <div class="navbar-text col-lg-8 col-xl-8">
-                    <h1>COVID-19 CASE</h1>
-                    <h1>MANAGER</h1>
-                    <h6>ONLINE DIAGNOSTIC SYSTEM</h6>
+                    <h1>COVID-19 VIRTUAL</h1>
+                    <h1>DIAGNOSTIC PLATFORM</h1>
+                    <h6>AN ONLINE DIAGNOSTIC SYSTEM</h6>
                 </div>
                 <div class="drop">
                     <div class="c-dropdown avatar_dropdown col-lg-2 col-xl-2">
